@@ -9,6 +9,7 @@ const Container = styled.div`
   border-radius: 15%;
   display: flex;
   overflow: hidden;
+  transition: 0.5s ease;
   cursor: pointer;
   background-image: ${(props) => props.image};
   background-size: cover;

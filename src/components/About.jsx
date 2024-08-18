@@ -1,6 +1,14 @@
 import React from 'react'
 import styled from "styled-components"
 
+
+const data = [
+  "Web Design",
+  "Development",
+  "Machine Learning",
+  "Nihongo"
+]
+
 const Section= styled.div`
 height: 100vh;
 scroll-snap-align: center;
@@ -60,6 +68,12 @@ flex-direction: column;
 justify-content: center;
 gap: 20px;
 `
+const List = styled.ul`
+  
+`
+const ListItem= styled.li`
+  
+`
 
 
 const About = () => {
@@ -67,7 +81,11 @@ const About = () => {
     <Section>
       <Container>
         <Left>
-          
+          <List>
+            {data.map((item)=>(
+              <ListItem key={item}>{item}</ListItem>
+            ))}
+          </List>
         </Left>
         <Right>
           <Title>About me</Title>
