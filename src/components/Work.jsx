@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { useState , useEffect } from 'react';
 
 const Container = styled.div`
-  width: 300px;
+  min-width: 17vw;
+  max-width: 20vw;
   height: 240px;
   background-color: #526699;
   border-radius: 15%;
@@ -54,6 +55,15 @@ font-size: 15px;
 width: 100%;
 height: 100%;
 background-color: rgba(0, 0, 0, 0.7);
+`
+const Nav = styled.nav`
+  
+`
+const Gitlink = styled.img`
+  
+`
+const ProjectDesc = styled.div`
+  
 `
 
 const Work = (props) => {
