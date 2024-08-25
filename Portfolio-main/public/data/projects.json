@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "name": "Translating App",
+      "image":"url(./img/trsnt.png)",
+      "link":"",
+      "technologies":"",
+      "desc":"Placeholder"
+    },
+    {
+      "id": 2,
+      "name": "API countries",
+      "image":"url(./img/cntr.png)",
+      "link":"",
+      "technologies":"",
+      "desc":"Placeholder"
+    },
+    {
+      "id": 3,
+      "name": "Image to text"
+    },
+    {
+      "id": 4,
+      "name": "Flashcards"
+    },
+    {
+      "id": 5,
+      "name": "PDF Reader"
+    },
+    {
+      "id": 6,
+      "name": "Wheather App"
+    },
+    {
+      "id": 7,
+      "name": "Pomodoro + todo"
+    }
+    ,
+    {
+      "id": 8,
+      "name": "Projekt 8"
+    }
+  ]

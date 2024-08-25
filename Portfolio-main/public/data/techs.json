@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "name": "Javascript",
+      "image":"url(./img/jslogo.png)",
+      "percentage":"65",
+      "level":"Intermediate"
+    },
+    {
+        "id": 2,
+        "name": "python",
+        "image":"url(./img/trsnt.png)",
+        "percentage":"65",
+        "level":"Intermediate"
+      }
+  ]
