@@ -57,12 +57,22 @@ height: 100%;
 background-color: rgba(0, 0, 0, 0.7);
 `
 const Nav = styled.nav`
-  
+ position: relative;
+  display: flex;
+  justify-content: center;
 `
-const Gitlink = styled.img`
-  
+const Gitlink = styled.a`
+  position: absolute;
+  right: 5px;
+`
+const GitIcon = styled.img`
+  height: 20px;
+  width: 20px;
 `
 const ProjectDesc = styled.div`
+  padding: 10px;
+`
+const Name = styled.span`
   
 `
 
@@ -81,7 +91,12 @@ const Work = (props) => {
 
   return (
     <Container onMouseEnter={()=>test()} onMouseLeave={()=>test2()} image={image}>
-      {hovered ? (<Description>{desc}</Description>) : (<TitleContainer>{name}</TitleContainer>)}
+      {hovered ? (
+      <Description>
+      <Nav><Name>{name}</Name><Gitlink><GitIcon src='./img/gitwhite.png'></GitIcon></Gitlink></Nav>
+      <ProjectDesc>{desc}</ProjectDesc>
+      </Description>
+    ) : (<TitleContainer>{name}</TitleContainer>)}
     </Container>
   );
 };

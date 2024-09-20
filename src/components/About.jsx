@@ -6,7 +6,7 @@ const data = [
   "Web Design",
   "Development",
   "Machine Learning",
-  "Nihongo"
+  "日本語"
 ]
 
 const Section= styled.div`
@@ -105,7 +105,6 @@ const ListItem= styled.li`
     }
   }
   }
-
 `
 
 
@@ -116,7 +115,9 @@ const About = () => {
         <Left>
           <List>
             {data.map((item)=>(
+              <>
               <ListItem key={item} text={item}>{item}</ListItem>
+              </>
             ))}
           </List>
         </Left>

@@ -2,15 +2,42 @@
     {
       "id": 1,
       "name": "Javascript",
-      "image":"url(./img/jslogo.png)",
-      "percentage":"65",
-      "level":"Intermediate"
+      "image":"./img/jslogo.png",
+      "percentage":"65%",
+      "level":"Experienced"
     },
     {
         "id": 2,
-        "name": "python",
-        "image":"url(./img/trsnt.png)",
-        "percentage":"65",
+        "name": "React",
+        "image":"./img/reactlogo.png",
+        "percentage":"40%",
         "level":"Intermediate"
+      }
+      
+      ,
+    {
+        "id": 3,
+        "name": "NodeJs",
+        "image":"./img/nodejslogo.png",
+        "percentage":"15%",
+        "level":"Beginner"
+      }
+      ,
+
+
+    {
+        "id": 5,
+        "name": "Python",
+        "image":"./img/pythonlogo.png",
+        "percentage":"35%",
+        "level":"Intermediate"
+      }
+      ,
+    {
+        "id": 6,
+        "name": "TensorFlow",
+        "image":"./img/tensorflowlogo.png",
+        "percentage":"10%",
+        "level":"Beginner"
       }
   ]

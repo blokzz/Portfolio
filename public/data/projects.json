@@ -4,7 +4,7 @@
       "name": "Translating App",
       "image":"url(./img/trsnt.png)",
       "link":"",
-      "technologies":"",
+      "technologies":["Javascript"],
       "desc":"Placeholder"
     },
     {
@@ -12,32 +12,38 @@
       "name": "API countries",
       "image":"url(./img/cntr.png)",
       "link":"",
-      "technologies":"",
+      "technologies":["Javascript"],
       "desc":"Placeholder"
     },
     {
       "id": 3,
-      "name": "Image to text"
+      "name": "Image to text",
+      "technologies":["Javascript"]
     },
     {
       "id": 4,
-      "name": "Flashcards"
+      "name": "Flashcards",
+      "technologies":["Javascript","React","NodeJs"]
     },
     {
       "id": 5,
-      "name": "PDF Reader"
+      "name": "PDF Reader",
+      "technologies":["Javascript"]
     },
     {
       "id": 6,
-      "name": "Wheather App"
+      "name": "Wheather App",
+      "technologies":["Javascript","React"]
     },
     {
       "id": 7,
-      "name": "Pomodoro + todo"
+      "name": "Pomodoro + todo",
+      "technologies":["Javascript"]
     }
     ,
     {
       "id": 8,
-      "name": "Projekt 8"
+      "name": "Projekt 8",
+      "technologies":["Javascript"]
     }
   ]
