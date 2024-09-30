@@ -4,11 +4,12 @@ import Tag from './Tag';
 
 const TagsContainer = styled.div`
 width: 100%;
-height: 40px;
 padding-bottom: 10px;
 display: flex;
 flex-direction: row;
 gap: 5px;
+flex-wrap: wrap;
+justify-content: center;
 `;
 
 const TagsSection = (props) => {

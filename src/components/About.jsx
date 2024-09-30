@@ -46,6 +46,7 @@ const Subtitle = styled.h2`
 color: #526699;
 `
 const Description = styled.p`
+text-align: justify;
 font-size: 18px;
 color: lightgray;
 `
@@ -127,7 +128,9 @@ const About = () => {
             <Line src="./img/line.png"/>
             <Subtitle>Learn about my hobbies</Subtitle>
           </WhatWeDo>
-          <Description>I have </Description>
+          <Description>
+              While I have gained foundational knowledge in programming, I recognize
+              that there is still much to learn and explore. I'm also passionate about japanese language and culture.</Description>
           <Button>See my works</Button>
         </Right>
       </Container>

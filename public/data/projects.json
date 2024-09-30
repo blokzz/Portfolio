@@ -45,5 +45,10 @@
       "id": 8,
       "name": "Projekt 8",
       "technologies":["Javascript"]
+    } ,
+    {
+      "id": 9,
+      "name": "GameQuiz",
+      "technologies":["NextJs" , "Tailwind" , "Typescript"]
     }
   ]

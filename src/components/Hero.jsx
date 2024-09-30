@@ -8,12 +8,10 @@ scroll-snap-align: center;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
 `
 
 const Container = styled.div`
   height: 100vh;
-  scroll-snap-align: center;
   width: 1100px;
   display: flex;
   justify-content: center;
@@ -86,10 +84,10 @@ const Hero = () => {
           <Title>My name is Kamil</Title>
           <WhatWeDo>
             <Line src="./img/line.png"/>
-            <Subtitle>Front-End Developer and Software Engineer</Subtitle>
+            <Subtitle>Junior front-End Developer and Beginner Software Engineer</Subtitle>
             <Line src="./img/line.png"/>
           </WhatWeDo>
-          <Description>I </Description>
+          <Description>I am a student and an aspiring programmer, currently at the beginning of my journey in the world of coding.</Description>
           <Button>Learn more about me</Button>
         </Left>
       </Container>

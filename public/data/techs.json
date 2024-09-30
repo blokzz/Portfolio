@@ -23,8 +23,13 @@
         "level":"Beginner"
       }
       ,
-
-
+      {
+          "id": 4,
+          "name": "Tailwind",
+          "image":"./img/tw.png",
+          "percentage":"60%",
+          "level":"Experienced"
+        },
     {
         "id": 5,
         "name": "Python",
@@ -35,9 +40,25 @@
       ,
     {
         "id": 6,
-        "name": "TensorFlow",
-        "image":"./img/tensorflowlogo.png",
-        "percentage":"10%",
-        "level":"Beginner"
-      }
+        "name": "NextJs",
+        "image":"./img/nxt.png",
+        "percentage":"30%",
+        "level":"Intermediate"
+      },
+      {
+          "id": 7,
+          "name": "Typescript",
+          "image":"./img/ts.png",
+          "percentage":"20%",
+          "level":"Beginner"
+        }
+        ,
+      {
+          "id": 8,
+          "name": "Tensorflow",
+          "image":"./img/tensorflowlogo.png",
+          "percentage":"10%",
+          "level":"Beginner"
+        }
+        
   ]

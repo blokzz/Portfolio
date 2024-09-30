@@ -7,7 +7,7 @@ display: flex;
 flex-direction: row;
 padding: 9px 15px 9px 15px;
 height: 20px;
-background-color: ${(props) =>(props.isActive ? '#526699' : '#3d548f')};
+background-color: ${(props) =>(props.isActive ? '#6c85c4' : '#3d548f')};
 gap: 3px;
 cursor: pointer;
 transition: 0.3s ease;

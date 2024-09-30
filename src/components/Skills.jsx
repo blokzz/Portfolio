@@ -29,6 +29,7 @@ margin-top: 40px;
 display:flex;
 flex-direction: row;
 gap: 50px;
+flex-wrap: wrap;
 `
 
 const IconContainer = styled.div`
