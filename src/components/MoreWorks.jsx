@@ -5,7 +5,7 @@ const Section = styled.div`
   display: flex;
   padding: 15px;
   height: 80vh;
-  width: 30vw;
+  width: 600px;
   position: relative;
   background-color: transparent;
   flex-direction: column;

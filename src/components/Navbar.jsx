@@ -67,7 +67,7 @@ const Navbar = () => {
         <Links>
           <List>
             <ListItem>Home</ListItem>
-            <ListItem>Studio</ListItem>
+            <ListItem>About me</ListItem>
             <ListItem>Works</ListItem>
             <ListItem>Contact</ListItem>
           </List>

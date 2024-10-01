@@ -98,7 +98,7 @@ const Works = () => {
         <Title>My Works</Title>
         <WorksContainer>
         {data.slice(0, 8).map(item => (
-          <Work key={item.id} name={item.name} image={item.image} desc={item.desc} ></Work>
+          <Work key={item.id} name={item.name} image={item.image} desc={item.desc} link={item.link} ></Work>
         ))}
          <SeeMoreWrap  onClick={handleScroll} onMouseOver={()=>SetarrowHovered(true)} onMouseOut={()=>SetarrowHovered(false)}>
              <SeeMore arrowHovered={arrowHovered}>See More of my Projects</SeeMore>

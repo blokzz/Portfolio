@@ -77,7 +77,7 @@ const Name = styled.span`
 `
 
 const Work = (props) => {
-  const { name,image,desc } = props;
+  const { name,image,desc , link } = props;
 
   const [hovered , setHover] = useState(false)
 
@@ -93,7 +93,7 @@ const Work = (props) => {
     <Container onMouseEnter={()=>test()} onMouseLeave={()=>test2()} image={image}>
       {hovered ? (
       <Description>
-      <Nav><Name>{name}</Name><Gitlink><GitIcon src='./img/gitwhite.png'></GitIcon></Gitlink></Nav>
+      <Nav><Name>{name}</Name><Gitlink href={link} target='_blank'><GitIcon src='./img/gitwhite.png'></GitIcon></Gitlink></Nav>
       <ProjectDesc>{desc}</ProjectDesc>
       </Description>
     ) : (<TitleContainer>{name}</TitleContainer>)}

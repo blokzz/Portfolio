@@ -4,6 +4,10 @@ import styled from 'styled-components';
 const Icon = styled.img`
   max-width: 300px;
   height: 140px;
+  @media (max-width: 1100px) {
+    max-width: 150px;
+    height: 70px;
+  }
 `;
 
 const IconContainer = styled.div`
@@ -19,6 +23,10 @@ const IconContainer = styled.div`
   width: 220px;
   padding: 5px;
   transition: width 0.3s linear;
+  @media (max-width: 1100px) {
+    max-width: 110px;
+    height: 110px;
+  }
 
   
   &::before {
@@ -74,6 +82,9 @@ const ProgressBar = styled.div`
   border: ${(props) => (props.hovered ? 'solid black 1px' : 'none') };
   overflow: hidden;
   margin: auto;
+  @media (max-width: 1100px) {
+    height: 3px;
+  }
   &::after {
     content: '';
     position: absolute;
@@ -87,9 +98,17 @@ const ProgressBar = styled.div`
 `;
 const Title = styled.span`
   height: 20px;
+  @media (max-width: 1100px) {
+    font-size: 0.7em;
+    height: 10px;
+  }
 `
 const Level = styled.span`
   height: 17px;
+  @media (max-width: 1100px) {
+    font-size: 0.7em;
+    height: 8px;
+  }
 `
 
 const Techicon = (props) => {

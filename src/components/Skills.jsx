@@ -7,8 +7,6 @@ height: 100vh;
 scroll-snap-align: center;
 display: flex;
 
-
-
 `
 const Container= styled.div`
 display: flex;
@@ -16,12 +14,6 @@ padding: 20px;
 width: 100%;
 align-items: center;
 flex-direction: column;
-`
-
-const Icon = styled.img`
-max-width: 200px;
-height: 100px;
-
 `
 
 const IconsWrapper= styled.div`
@@ -32,39 +24,9 @@ gap: 50px;
 flex-wrap: wrap;
 `
 
-const IconContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:5px;
-`
-
 const Title= styled.h1`
 display: flex;
 font-size: 45px;
-`
-const ProgressBar = styled.div`
-  width: 80%;
-  position: relative;
-  height: 20px;
-  ::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    background-color: green;
-    animation: moveText 0.3s linear both;
-    @keyframes moveText {
-      from{
-        width: 0%;
-      }
-      to{
-        width: ${(props)=>props.prc};
-      }
-    }
-  }
 `
 
 const Skills = () => {

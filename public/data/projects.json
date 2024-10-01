@@ -11,19 +11,25 @@
       "id": 2,
       "name": "API countries",
       "image":"url(./img/cntr.png)",
-      "link":"",
+      "link":"https://github.com/blokzz/api-countries",
       "technologies":["Javascript"],
       "desc":"Placeholder"
     },
     {
       "id": 3,
       "name": "Image to text",
-      "technologies":["Javascript"]
+      "image":"url(./img/bgpr3.png)",
+      "link":"https://github.com/blokzz/api-countries",
+      "technologies":["Javascript"],
+      "desc":"Placeholder"
     },
     {
       "id": 4,
       "name": "Flashcards",
-      "technologies":["Javascript","React","NodeJs"]
+      "image":"url(./img/bgpr4.png)",
+      "link":"https://github.com/blokzz/FlashCards",
+      "technologies":["Javascript","React","NodeJs"],
+       "desc":"Placeholder"
     },
     {
       "id": 5,
@@ -38,7 +44,10 @@
     {
       "id": 7,
       "name": "Pomodoro + todo",
-      "technologies":["Javascript"]
+      "image":"url(./img/bgpr5.png)",
+      "link":"https://github.com/blokzz/Pomodoro",
+      "technologies":["Javascript"],
+      "desc":"Placeholder"
     }
     ,
     {
