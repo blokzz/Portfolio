@@ -106,7 +106,7 @@ function Contact() {
     <Container>
     <ContactContainer>
     <Title>Contact</Title>
-    <Mail>E-mail: dinoargentino@gmail.</Mail>
+    <Mail>E-mail: rudydinoargentinos@gmail.com.</Mail>
     </ContactContainer>
     <SocialContainer>
     <SocialLink className="linkedin" target='_blank' href="https://linkedin.com"><Icon src='./img/linkedin.png'></Icon></SocialLink>
