@@ -1,6 +1,6 @@
 import React from 'react'
 import styled , {keyframes} from "styled-components"
-import Map from './map';
+import Map from './Map';
 const blob = keyframes`
   0%, 100% {
     border-radius: 77% 47% 61% 49%;
