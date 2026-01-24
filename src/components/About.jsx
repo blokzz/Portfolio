@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
 
-
 const data = [
   "Web Design",
   "Development",
@@ -76,35 +75,48 @@ list-style: none;
 display: flex;
 flex-direction: column;
 gap:20px;
-  
 `
+
 const ListItem= styled.li`
+  font-family: 'Noto Sans JP';
   font-size: 100px;
-  font-weight: bold;
+  font-weight:700;
   position: relative;
   color: transparent;
   -webkit-text-stroke: 1px white;
   cursor: pointer;
+  z-index: 1;
+  isolation: isolate;
+  color: #000; 
+  -webkit-text-stroke: 2px white;
+  paint-order: stroke fill; 
+  mix-blend-mode: lighten;
   ::after{
     content: "${(props)=>props.text}";
     position: absolute;
     top: 0;
     left: 0;
+    font-family: 'Noto Sans JP';
+    font-weight: 700;
     color: white;
     width: 0px;
     overflow: hidden;
     white-space: nowrap;
+    z-index: 2;
+    -webkit-text-stroke: 0px;
   }
   
   &:hover{
+    z-index: 10;
     ::after{
-    animation: moveText 0.3s linear both;
-    @keyframes moveText {
-      to{
-        width: 100%;
+      animation: moveText 0.3s linear both;
+      z-index: 11;
+      @keyframes moveText {
+        to{
+          width: 100%;
+        }
       }
     }
-  }
   }
 `
 
@@ -116,9 +128,7 @@ const About = () => {
         <Left>
           <List>
             {data.map((item)=>(
-              <>
               <ListItem key={item} text={item}>{item}</ListItem>
-              </>
             ))}
           </List>
         </Left>
