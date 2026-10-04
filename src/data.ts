@@ -13,7 +13,6 @@ export const profile = {
 export const links = {
   github: "https://github.com/blokzz",
   leetcode: "https://leetcode.com/u/blokz/",
-  // Fill in with the full profile URL to show the LinkedIn link.
   linkedin: "",
 };
 
