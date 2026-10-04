@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f1117;
+  --surface: #161922;
+  --border: #252a38;
+  --foreground: #e6e8ee;
+  --muted: #9aa1b5;
+  --accent: #7aa2f7;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+/* Entrance animation for the hero, staggered with inline animation-delay. */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fade-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+/* Slow drifting glow behind the hero. */
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(40px, 24px, 0) scale(1.12);
+  }
+}
+
+.glow {
+  background: radial-gradient(
+    circle at center,
+    color-mix(in srgb, var(--accent) 28%, transparent),
+    transparent 65%
+  );
+  animation: drift 14s ease-in-out infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor::after {
+  content: "";
+  display: inline-block;
+  width: 0.08em;
+  height: 0.9em;
+  margin-left: 0.12em;
+  vertical-align: -0.05em;
+  background: var(--accent);
+  animation: blink 1.1s steps(1) infinite;
+}
+
+/* Scroll reveal: only hidden when scripting is available, so it degrades to visible. */
+@media (scripting: enabled) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.7s cubic-bezier(0.2, 0.7, 0.2, 1),
+      transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.card {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px -12px color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.link-arrow span {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.link-arrow:hover span {
+  transform: translate(3px, -3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .fade-up,
+  .glow,
+  .cursor::after {
+    animation: none;
+  }
+  .fade-up {
+    opacity: 1;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .card,
+  .card:hover {
+    transform: none;
+    transition: none;
+  }
+}
