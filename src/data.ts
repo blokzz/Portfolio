@@ -13,7 +13,7 @@ export const profile = {
 export const links = {
   github: "https://github.com/blokzz",
   leetcode: "https://leetcode.com/u/blokz/",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/kamil-bobrzak-a60717338/",
 };
 
 export type Project = {
@@ -71,15 +71,16 @@ export const projects: Project[] = [
   },
   {
     name: "Programdle",
-    tagline: "Wordle for programming languages",
+    tagline: "Daily Wordle-style game for programming languages",
     description:
-      "A guessing game in the style of Wordle and Loldle, where the answer is a programming language. Built as a full-stack Next.js app with Prisma for data access and deployed on Vercel.",
+      "A daily guessing game in the style of Wordle and Loldle, where the answer is a programming language. You get a code snippet written in it and guess from a list of 37 languages; every guess is compared on release year, paradigm, typing and compiled vs. interpreted, and every miss unlocks another snippet. Results can be shared as an emoji grid, and stats are kept locally in the browser.",
     highlights: [
-      "Full-stack Next.js with Prisma for data access",
-      "Typed end to end with TypeScript, styled with Tailwind",
-      "Live and playable",
+      "Daily puzzle picked deterministically from the date, so no database or accounts are needed",
+      "Three progressive code hints and a guess table with higher/lower hints for the release year",
+      "Stats with guess distribution, persisted in localStorage with Zustand, plus a countdown to the next puzzle",
+      "Built with Next.js App Router, shadcn/ui and Tailwind, live on Vercel",
     ],
-    tech: ["Next.js", "Prisma", "TypeScript", "Tailwind"],
+    tech: ["Next.js", "TypeScript", "Tailwind", "Zustand", "shadcn/ui"],
     repo: "https://github.com/blokzz/Programdle",
     live: "https://programdle.vercel.app",
   },
